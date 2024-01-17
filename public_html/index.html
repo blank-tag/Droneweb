@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="Start your development with Rubic landing page."
+      content="Your Ultimate Destination for Professional Drone and AI-Integrated Services"
     />
     <meta name="author" content="Devcrud" />
     <title>Drone1Go</title>
@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="assets/vendors/themify-icons/css/themify-icons.css"
     />
-    <!-- Bootstrap + Rubic main styles -->
+    
     <link rel="stylesheet" href="assets/css/rubic.css" />
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -94,32 +94,51 @@
             </div>
           </div>
           <div class="col-md-5 d-none d-md-block">
-            <form class="header-form">
+            <form class="header-form" action="https://formspree.io/f/mpzvwboy"
+            method="POST"
+          >
               <div class="head">
                 Get in Touch <span class="text-primary">With us now</span> trial
                 today.
               </div>
               <div class="body">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name*" />
+                  <input required ="text" class="form-control" placeholder="Name*" name="text" />
                 </div>
                 <div class="form-group">
                   <input
+                    name="email"
                     type="email"
                     class="form-control"
                     placeholder="Email*"
+                    required
                   />
                 </div>
                 <div class="form-group">
+                  <input
+                   name="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <!-- <div class="form-group">
                   <input
                     type="password"
                     class="form-control"
                     placeholder="Password*"
                   />
+                </div> -->
+                <div class="form-group">
+                  <select name="subject" class="form-control" id="exampleFormControlSelect1" placeholder="Enquiry"> 
+                    <option>Surveying and Mapping</option>
+                    <option>Aerial Photography and Videography</option>
+                    <option>Industrial Solutions</option>
+                  </select>
+
                 </div>
               </div>
               <div class="footer">
-                <button class="btn btn-primary btn-block">Get Started</button>
+                <button class="btn btn-primary btn-block">Submit</button>
               </div>
             </form>
           </div>
@@ -133,19 +152,15 @@
           <p class="subtitle">Connect with us in all the networks</p>
         </div>
         <div class="social-links">
-          <a href="javascript:void(0)" class="link"
+          <a href="https://www.facebook.com/profile.php?id=61555526279957" class="link"
             ><i class="ti-facebook"></i
           ></a>
-          <a href="javascript:void(0)" class="link"
+          <a href="https://x.com/droneonego?s=11&t=6V9R4tF6eByxVVHiFrhUiQ" class="link"
             ><i class="ti-twitter-alt"></i
           ></a>
-          <a href="javascript:void(0)" class="link"
-            ><i class="ti-google"></i
-          ></a>
-          <a href="javascript:void(0)" class="link"
-            ><i class="ti-pinterest-alt"></i
-          ></a>
-          <a href="javascript:void(0)" class="link"
+         
+        
+          <a href="https://www.instagram.com/drone1go/" class="link"
             ><i class="ti-instagram"></i
           ></a>
         </div>
@@ -196,9 +211,9 @@
                     drone fleet, enhanced by cutting-edge AI technology.
                   </p>
 
-                  <button class="btn btn-primary mt-3">
+                  <a href="#photography" class="btn btn-primary mt-3">
                     Click here to Know More
-                  </button>
+                  </a>
                 </div>
                 <div class="tab-pane fade" id="pills-profile">
                   <h4 class="title">Surveying and Mapping</h4>
@@ -217,9 +232,9 @@
                     roofs and power lines, we deliver sharp visuals, ensuring
                     wiser maintenance choices every time.
                   </p>
-                  <button class="btn btn-primary mt-3">
+                  <a href ="#survey" class="btn btn-primary mt-3">
                     Click here to Know More
-                  </button>
+                  </a>
                 </div>
                 <div class="tab-pane fade" id="pills-contact">
                   <h4 class="title">Industries Solutions</h4>
@@ -232,16 +247,16 @@
                     media content creation showcase our dynamic and compelling
                     approach.
                   </p>
-                  <button class="btn btn-primary mt-3">
+                  <a href="#industries" class="btn btn-primary mt-3">
                     Click here to Know More
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 d-none d-lg-block align-self-center">
             <img
-              src="assets/imgs/eiffel-tower.svg"
+              src="assets/imgs/aerial.gif"
               alt=""
               class="w-100 tower"
             />
@@ -253,10 +268,11 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-md-5 align-self-center mb-4 mb-md-0">
-            <img src="assets/imgs/img.jpg" alt="" class="shadow w-100" />
+            <img src="assets/imgs/DJI_0440-2.jpg" alt="" class="shadow img-fluid" style="max-height: 100%;" />
+
           </div>
-          <div class="col-md-6 col-lg-5">
-            <h6 class="title">Aerial Photography and Videography</h6>
+          <div  class="col-md-6 col-lg-5">
+            <h6 id="photography" class="title">Aerial Photography and Videography</h6>
             <h3 class="header-title"><span id="typewriter"></span></h3>
             <p>
               Experience a new dimension of photography and videography with
@@ -331,7 +347,7 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-md-6 col-lg-5 align-self-center">
-            <h6 class="title">Surveying and Mapping</h6>
+            <h6 id = "survey" class="title">Surveying and Mapping</h6>
             <p>
               Embark on a journey of precision and efficiency with Drone One Go's cutting-edge Surveying and Mapping Services. 
             </p>
@@ -386,8 +402,8 @@
     <section class="section">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-md-5 align-self-center mb-4 mb-md-0">
-            <img src="assets/imgs/img.jpg" alt="" class="shadow w-100" />
+          <div id="industries" class="col-md-5 align-self-center mb-4 mb-md-0">
+            <img src="assets/imgs/DJI_0440-2.jpg" alt="" class="shadow w-100" />
           </div>
           <div class="col-md-6 col-lg-5">
             <h6 class="title">Industries Solutions </h6>
@@ -502,19 +518,21 @@
         </div>
       </div>
     </section>
+
     <section class="section" id="pricing">
       <div class="container text-center">
         <h6 class="display-4 has-line">PRICING OPTIONS</h6>
         <p class="mb-5 pb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
         </p>
         <div class="row pt-5">
           <div class="col-lg-4">
             <a href="javascript:void(0)" class="pricing-card">
-              <div class="head">Aerial Photography and Videography</div>
+              <div class="head">Aerial Photography</div>
               <div class="body">
-                <h1><small>$</small>499</h1>
-                <p>One-Time solutions</p>
+                <p> Starting from ..</p>
+                <h1><small>₹</small>10,000</h1>
+                
               </div>
               <ul class="list-group">
                 <li class="list-group-item">Overview Shots</li>
@@ -523,47 +541,57 @@
                 <li class="list-group-item">360-Degree Views</li>
                 <li class="list-group-item">Branding Campaigns</li>
                 <li class="list-group-item">Live Event Coverage</li>
+                <li class="list-group-item"><button onclick="window.location.href='#contact'" class="btn "style=" background-color: #343a40; color: #eaf0fc" type="submit"><i class="ti-email pr-1"></i>Contact Us</button></li>
+
               </ul>
             </a>
           </div>
           <div class="col-lg-4">
-            <a href="javascript:void(0)" class="pricing-card popular">
+            <a href="javascript:void(0)" class="pricing-card ">
               <div class="head">Surveying and Mapping</div>
               <div class="body">
-                <h1><small>$</small>14.99</h1>
-                <p>Monthly Payment</p>
+                <p> Starting from ..</p>
+                <h1><small>₹</small>25,000</h1>
+
               </div>
-              <div class="popular-item">OUR MOST POPULAR</div>
+              
               <ul class="list-group">
-                <li class="list-group-item">5 GB OF SPACE</li>
-                <li class="list-group-item">50 GB OF BANDWIDTH</li>
-                <li class="list-group-item">10 WEBSITES</li>
-                <li class="list-group-item">ADVANCED CUSTOMIZATION</li>
-                <li class="list-group-item">WORDPRESS INTEGRATION</li>
-                <li class="list-group-item">EMAIL SUPPORT</li>
+                <li class="list-group-item">Construction and Development</li>
+                <li class="list-group-item">Agricultural Intelligence</li>
+                <li class="list-group-item">Real Estate Insights</li>
+                <li class="list-group-item">Land Mapping</li>
+                <li class="list-group-item">Site Surveys</li>
+                <li class="list-group-item">Oil and Gas Exploration</li>
+                <li class="list-group-item"><button onclick="window.location.href='#contact'" class="btn " style=" background-color: #343a40; color: #eaf0fc" type="submit"><i class="ti-email pr-1"></i>Contact Us</button></li>
+
               </ul>
             </a>
           </div>
           <div class="col-lg-4">
-            <a href="javascript:void(0)" class="pricing-card">
-              <div class="head">Enterprise</div>
+            <a href="javascript:void(0)" class="pricing-card ">
+              <div class="head">Enterprise Solutions</div>
               <div class="body">
-                <h1><small>$</small>99</h1>
-                <p>Monthly Payment</p>
+                <p>For More information </p>
+                <button class="btn btn-primary rounded"><i class="ti-new-window pr-1"></i>Get In Touch </button>
               </div>
+              
+              
               <ul class="list-group">
-                <li class="list-group-item">UNLIMITED OF SPACE</li>
-                <li class="list-group-item">UNLIMITED BANDWIDTH</li>
-                <li class="list-group-item">120 WEBSITES</li>
-                <li class="list-group-item">ADVANCED CUSTOMIZATION</li>
-                <li class="list-group-item">WORDPRESS INTEGRATION</li>
-                <li class="list-group-item">EMAIL SUPPORT</li>
+                <li class="list-group-item">Border Monitoring</li>
+                <li class="list-group-item">Environmental Monitoring</li>
+                <li class="list-group-item">Telecommunications and Infrastructure</li>
+                
+                <li class="list-group-item">Film and Media Production</li>
+                <li class="list-group-item">Logistics and Warehousing</li>
+                <li class="list-group-item">Disaster Monitoring</li>
+                <li class="list-group-item"><button onclick="window.location.href='#contact'" class="btn " style=" background-color: #343a40; color: #eaf0fc" type="submit"><i class="ti-email pr-1"></i>Contact Us</button></li>
               </ul>
             </a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="section" id="review">
       <div class="container text-center">
         <h6 class="display-4 has-line">WHAT OUR CUSTOMERS ARE SAYING</h6>
@@ -577,18 +605,18 @@
           <div class="col-md-4">
             <div class="testmonial">
               <p class="description">
-                <i>"Great Video Editing and content for my Car Showcase"</i>
+                <i>"They Shot the Best Aerial Drone footage of our Resturant, Really Impressive"</i>
               </p>
               <div class="media">
                 <img
                   class="mr-3"
-                  src="assets/imgs/avatar1.jpg"
+                  src="assets/imgs/alai.webp"
                   width="60"
                   alt="Generic placeholder image"
                 />
                 <div class="media-body">
-                  <h6 class="title">Lui</h6>
-                  <p class="text-muted"></p>
+                  <h6 class="title">Alai Osai</h6>
+                  <p class="text-muted">Family Resturant</p>
                 </div>
               </div>
             </div>
@@ -597,21 +625,19 @@
             <div class="testmonial">
               <p class="description">
                 <i
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Excepturi, eaque, repellat. Corporis facilis reprehenderit,
-                  cupiditate.</i
+                  > "An amazing walkthrough motion shot using Drones was delivered with excellence"</i
                 >
               </p>
               <div class="media">
                 <img
                   class="mr-3"
-                  src="assets/imgs/avatar2.jpg"
+                  src="assets/imgs/bay.png"
                   width="60"
                   alt="Generic placeholder image"
                 />
                 <div class="media-body">
-                  <h6 class="title">John Doe</h6>
-                  <p class="text-muted">Freelancer</p>
+                  <h6 class="title">Bay6</h6>
+                  <p class="text-muted">Restobar</p>
                 </div>
               </div>
             </div>
@@ -620,21 +646,18 @@
             <div class="testmonial">
               <p class="description">
                 <i
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Excepturi, eaque, repellat. Corporis facilis reprehenderit,
-                  cupiditate.</i
-                >
+                  > " Best drone shoot view of our Resturant "</i>
               </p>
               <div class="media">
                 <img
                   class="mr-3"
-                  src="assets/imgs/avatar3.jpg"
+                  src="assets/imgs/thoondil.webp"
                   width="60"
                   alt="Generic placeholder image"
                 />
                 <div class="media-body">
-                  <h6 class="title">Emily Roe</h6>
-                  <p class="text-muted">Graphic Designer</p>
+                  <h6 class="title">thoondil</h6>
+                  <p class="text-muted">Resturant</p>
                 </div>
               </div>
             </div>
@@ -662,11 +685,15 @@
           Explore the endless possibilities that industry-specific drones can bring to your operations. Contact us now to tailor our drone services to the distinctive requirements of your industry!
         </p>
 
-        <form>
+        <form 
+        action="https://formspree.io/f/mnqenwok"
+        method="POST"
+        >
           <div class="row mb-4">
             <div class="col-md-6">
               <div class="form-group pb-1">
                 <input
+                name = "name"
                   type="text"
                   class="form-control"
                   required
@@ -675,6 +702,7 @@
               </div>
               <div class="form-group pb-1">
                 <input
+                  name="email"
                   type="email"
                   class="form-control"
                   required
@@ -682,12 +710,12 @@
                 />
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" />
+                <input name = "subject"type="text" class="form-control" placeholder="Subject" />
               </div>
             </div>
             <div class="col-md-6">
               <textarea
-                name=""
+                name="text"
                 id=""
                 cols=""
                 rows="7"
@@ -715,22 +743,22 @@
           &copy; <a href="http://www.devcrud.com">DevCRUD</a>
         </p> -->
         <div class="social-links">
-          <a href="javascript:void(0)" class="link"
+          <a href="https://www.facebook.com/profile.php?id=61555526279957" class="link"
             ><i class="ti-facebook"></i
           ></a>
-          <a href="javascript:void(0)" class="link"
+          <a href="https://x.com/droneonego?s=11&t=6V9R4tF6eByxVVHiFrhUiQ" class="link"
             ><i class="ti-twitter-alt"></i
           ></a>
-          <a href="javascript:void(0)" class="link"
+          <!-- <a href="javascript:void(0)" class="link"
             ><i class="ti-google"></i
-          ></a>
-          <a href="javascript:void(0)" class="link"
+          ></a> -->
+          <!-- <a href="javascript:void(0)" class="link"
             ><i class="ti-pinterest-alt"></i
-          ></a>
-          <a href="javascript:void(0)" class="link"
+          ></a> -->
+          <a href="https://www.instagram.com/drone1go/" class="link"
             ><i class="ti-instagram"></i
           ></a>
-          <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+          <!-- <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a> -->
         </div>
       </div>
     </footer>
